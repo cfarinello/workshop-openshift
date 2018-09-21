@@ -1,14 +1,14 @@
  node('maven') {
     stage('build') {
         echo 'building app :)'
-        openshiftBuild(buildConfig: 'cfarinello', showBuildLogs: 'true')
+        openshiftBuild(buildConfig: 'workshop-openshift', showBuildLogs: 'true')
     }
     stage('verify') {
         echo 'dummy verification....'
     }
     stage('deploy') {
         input 'Manual Approval'
-        openshiftDeploy(deploymentConfig: 'cfarinello')
+        openshiftDeploy(deploymentConfig: 'workshop-openshift')
     }
     stage('promoting to QA') {
        echo 'fake stage...'
