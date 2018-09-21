@@ -1,5 +1,5 @@
 <?php
-echo "<h1>Openshift Workshop v12.0</h1> ";
+echo "<h1>Openshift Workshop v14.0</h1> ";
 echo $_SERVER['SERVER_ADDR'];
 echo "<br><hr>";
 echo "<h2>Cidades cadastradas no Banco de Dados:</h2>";
